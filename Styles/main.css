@@ -1,0 +1,83 @@
+h1{
+  color: #189ACD;
+  font-weight:bold;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+
+}
+h2{
+  color: #189ACD;
+  font-weight: 100;
+  font-size: 25px;
+  margin: 40px 0px 20px;
+}
+
+header,main,footer{
+  text-align: center;
+  padding: auto;
+  width: 750px;
+  height: auto;
+  border-style: solid;
+  border-color: #2D6275;
+  background: white;
+  margin: auto;
+}
+
+td,tr{
+  text-align: center;
+  border: 1px solid black;
+  height: 75px;
+  width: 75px;
+  background-color: #189ACD;
+  font-family: sans-serif;
+  color:white;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+body {
+  text-align: center;
+  background-image: url("../Images/snowy_drop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #189ACD;
+}
+
+ #clockdiv{
+    font-family: sans-serif;
+    color: #189ACD;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+#clockdiv > div{
+  padding: 5px;
+  padding-top: 10px;
+  border-radius: 3px;
+  background: #189ACD;
+  display: inline-block;
+
+}
+#clockdiv div > span{
+    padding: 10px;
+    border-radius: 3px;
+    background: white;
+    display: inline-block;
+}
+.smalltext{
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-size:  15px;
+}
+
+.all_bttn{
+  border-radius: 4px;
+  background-color: #189ACD;
+  color:white;
+  font-size: 16px;
+  font-family: sans-serif;
+}

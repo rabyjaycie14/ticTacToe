@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe!</title>
+    <link rel="stylesheet" href="Styles\normalize.css">
+    <link rel="stylesheet" href="Styles\main.css">
+    <script type="text/javascript" src="js\Player_Versus_Player.js"></script>
+    <script type="text/javascript" src="js\Player_Versus_Computer.js"></script>
+    <script type="text/javascript" src="js\stopwatch.js"></script>
+  </head>
+
+  <header>
+    <h1 id="tictactoe">Jaycie's Tic Tac Toe Spectacular!</h1>
+  </header>
+
+  <main>
+    <h2>Choose a Game Mode below to get started!</h2>
+    <button type="button" class ="all_bttn" onclick="setTimer(false); Player_Versus_Player();">Player 1 Versus Player 2</button>
+    <button type="button" class ="all_bttn" onclick="setTimer(false); Player_Versus_Computer();">Player 1 Versus Computer</button>
+    <h2>If you want to start a new game, click Start/Restart!</h2>
+    <button type="button" class ="all_bttn" onclick="start_or_restart()">Start/Restart</button>
+    <h2 id="game_PVP" style="display:none;" onclick="Player_Versus_Player()"></h2>
+    <h2 id="game_PVC" style="display:none;" onclick="Player_Versus_Computer()"></h2>
+
+    <table id="table1" class ="center" style="display:none;">
+      <tr>
+        <td id="r1c1" onclick="Player_Versus_Player('r1c1')"> </td>
+        <td id="r1c2" onclick="Player_Versus_Player('r1c2')"> </td>
+        <td id="r1c3" onclick="Player_Versus_Player('r1c3')"> </td>
+      </tr>
+
+      <tr>
+        <td id="r2c1" onclick="Player_Versus_Player('r2c1')"> </td>
+        <td id="r2c2" onclick="Player_Versus_Player('r2c2')"> </td>
+        <td id="r2c3" onclick="Player_Versus_Player('r2c3')"> </td>
+      </tr>
+
+      <tr>
+        <td id="r3c1" onclick="Player_Versus_Player('r3c1')"> </td>
+        <td id="r3c2" onclick="Player_Versus_Player('r3c2')"> </td>
+        <td id="r3c3" onclick="Player_Versus_Player('r3c3')"> </td>
+      </tr>
+    </table>
+
+    <table id="table2" class="center" style="display:none;">
+      <tr>
+        <td id="r1c1_2" onclick="Player_Versus_Computer('r1c1_2')"> </td>
+        <td id="r1c2_2" onclick="Player_Versus_Computer('r1c2_2')"> </td>
+        <td id="r1c3_2" onclick="Player_Versus_Computer('r1c3_2')"> </td>
+      </tr>
+
+      <tr>
+        <td id="r2c1_2" onclick="Player_Versus_Computer('r2c1_2')"> </td>
+        <td id="r2c2_2" onclick="Player_Versus_Computer('r2c2_2')"> </td>
+        <td id="r2c3_2" onclick="Player_Versus_Computer('r2c3_2')"> </td>
+      </tr>
+
+      <tr>
+        <td id="r3c1_2" onclick="Player_Versus_Computer('r3c1_2')"> </td>
+        <td id="r3c2_2" onclick="Player_Versus_Computer('r3c2_2')"> </td>
+        <td id="r3c3_2" onclick="Player_Versus_Computer('r3c3_2')"> </td>
+      </tr>
+    </table>
+
+    <h2 id="player_turn_mode2" style="display: none;" onclick="Player_Versus_Player()"> </h2>
+    <h2 id="player_turn_mode1" style="display: none" onclick="Player_Versus_Computer()"> </h2>
+
+    <h2 id="winner_MODE1"> </h2>
+    <button type="button" class ="all_bttn" id="game_over_bttn1" onclick="reset()" style="display:none;text-align:center;">Play Again?</button>
+    <h2 id="winner_MODE2"> </h2>
+    <button type="button" class ="all_bttn" id="game_over_bttn2" onclick="reset()" style="display:none;text-align:center;">Play Again?</button>
+
+    <h2 id="cats_game_MODE1"> </h2>
+    <h2 id="cats_game_MODE2"> </h2>
+
+    <h2>Game Timer</h2>
+    <div id="clockdiv">
+      <div>
+        <span class="minutes" id="minute"></span>
+        <div class="smalltext">Minutes</div>
+      </div>
+      <div>
+        <span class="seconds" id="second"></span>
+        <div class="smalltext">Seconds</div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Have an issue? log it here!</p>
+    <button type="button" class ="all_bttn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSd7NEM13ZgbcPJTOKpmLAr9xN0jh0salMxWihaBCcZQrNXE9w/viewform?usp=sf_link')";>Contact us!</button>
+    <p>© 2018 Jaycie Raby</p>
+
+  </footer>
+</html>
